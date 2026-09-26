@@ -3,10 +3,10 @@ from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 from pydantic import BaseModel
 
-from database import engine, get_db
-from models import Base, Expense
-from analytics import analyze_expenses
-from sql_analytics import get_sql_analytics
+from backend.database import engine, get_db
+from backend.models import Base, Expense
+from backend.analytics import analyze_expenses
+from backend.sql_analytics import get_sql_analytics
 
 Base.metadata.create_all(bind=engine)
 
