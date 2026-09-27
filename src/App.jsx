@@ -16,7 +16,8 @@ import {
 import "./App.css";
 import ExpenseForm from "./ExpenseForm";
 
-const API_BASE_URL = "http://127.0.0.1:8000";
+const API_BASE_URL =
+  import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000";
 
 const CHART_COLORS = [
   "#2563eb",
